@@ -1,16 +1,12 @@
-Lost field SourceName, awg-manager
-Lost field SourceDateEpoch, 1769168209
-Lost field Installed-Size, 10032
 Package: awg-manager
 Version: 1.2.1
 Depends: curl
 Section: net
 Architecture: aarch64-3.10
 Maintainer: hoaxisr
-MD5Sum: cf9b63f8bbeb9d263ba15af951566fbf
-Size: 4136911
+MD5Sum: d002b433a26749f7600d1a12a4c998b7
+Size: 4136895
 Filename: awg-manager_1.2.1_aarch64-3.10-kn.ipk
-Source: https://github.com/hoaxisr/awg-manager
 Description: AmneziaWG tunnel manager with web interface
 
 
