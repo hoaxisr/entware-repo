@@ -6,6 +6,9 @@ on:
       - '**/*.ipk'
   workflow_dispatch:  # Manual trigger
 
+permissions:
+  contents: write
+
 jobs:
   reindex:
     runs-on: ubuntu-latest
