@@ -35,12 +35,16 @@ echo "src/gz keenetic_custom https://hoaxisr.github.io/entware-repo/aarch64-3.10
 
 ```bash
 opkg update
-opkg install awg-manager
+opkg install awg-manager      # Web-интерфейс для AmneziaWG
+opkg install sing-box-awg     # sing-box с поддержкой AmneziaWG
 ```
 
 ## Available Packages
 
-- **awg-manager** - AmneziaWG tunnel manager with web interface
+| Package | Version | Description |
+|---------|---------|-------------|
+| **awg-manager** | 1.2.1 | AmneziaWG tunnel manager with web interface |
+| **sing-box-awg** | 1.12.17-awg2.0 | sing-box proxy platform with AmneziaWG 2.0 support |
 
 ## For Developers
 
