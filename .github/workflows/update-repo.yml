@@ -1,0 +1,43 @@
+name: Update Entware Repository Indexes
+
+on:
+  push:
+    paths:
+      - '**/*.ipk'
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  reindex:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install opkg-utils
+        run: |
+          git clone --depth 1 https://git.yoctoproject.org/opkg-utils
+          chmod +x opkg-utils/opkg-make-index
+
+      - name: Rebuild Indexes
+        run: |
+          for arch_dir in mipsel-3.4-kn aarch64-3.10-kn; do
+            if [ -d "$arch_dir" ]; then
+              cd "$arch_dir"
+              if ls *.ipk >/dev/null 2>&1; then
+                echo "Generating index for $arch_dir..."
+                ../opkg-utils/opkg-make-index . > Packages
+                gzip -9c Packages > Packages.gz
+                echo "Done: $(wc -l < Packages) lines in Packages"
+              else
+                echo "No .ipk files in $arch_dir, skipping"
+              fi
+              cd ..
+            fi
+          done
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add */Packages */Packages.gz 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "Update package indexes"
+          git push
