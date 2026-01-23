@@ -48,10 +48,4 @@ opkg install sing-box-awg-beta # sing-box beta
 | **sing-box-awg** | 1.12.17-awg2.0 | sing-box proxy platform with AmneziaWG 2.0 support (stable) |
 | **sing-box-awg-beta** | 1.13.0-beta.7-awg2.0 | sing-box proxy platform with AmneziaWG 2.0 support (beta) |
 
-## For Developers
-
-To add a new package:
-1. Build `.ipk` for target architecture
-2. Place it in the corresponding folder (`mipsel-3.4-kn/` or `aarch64-3.10-kn/`)
-3. Push to repository
-4. GitHub Actions will automatically regenerate `Packages` index
+## Use only if understand what are you doing
