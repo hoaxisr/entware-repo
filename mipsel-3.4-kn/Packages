@@ -1,0 +1,16 @@
+Lost field SourceName, awg-manager
+Lost field SourceDateEpoch, 1769167494
+Lost field Installed-Size, 11744
+Package: awg-manager
+Version: 1.2.1
+Depends: curl
+Section: net
+Architecture: mipsel-3.4
+Maintainer: hoaxisr
+MD5Sum: 90e35f37afab93f31c5b4477242c03ff
+Size: 4178564
+Filename: awg-manager_1.2.1_mipsel-3.4-kn.ipk
+Source: https://github.com/hoaxisr/awg-manager
+Description: AmneziaWG tunnel manager with web interface
+
+
