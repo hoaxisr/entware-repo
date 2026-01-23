@@ -10,3 +10,15 @@ Filename: awg-manager_1.2.1_mipsel-3.4-kn.ipk
 Description: AmneziaWG tunnel manager with web interface
 
 
+Package: sing-box-awg
+Version: 1.12.17-awg2.0
+Section: net
+Architecture: mipsel-3.4
+Maintainer: hoaxisr
+MD5Sum: 61089de9a372bc908ad97baece0a89ea
+Size: 11819110
+Filename: sing-box-awg_1.12.17-awg2.0_mipsel-3.4-kn.ipk
+Description: sing-box proxy platform with AmneziaWG 2.0 support
+HomePage: https://github.com/hoaxisr/amnezia-box
+
+
