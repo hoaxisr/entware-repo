@@ -35,9 +35,10 @@ echo "src/gz keenetic_custom https://hoaxisr.github.io/entware-repo/aarch64-3.10
 
 ```bash
 opkg update
-opkg install awg-manager       # Web-интерфейс для AmneziaWG
-opkg install sing-box-awg      # sing-box stable
-opkg install sing-box-awg-beta # sing-box beta
+opkg install awg-manager          # Web-интерфейс для AmneziaWG
+opkg install sing-box-awg         # sing-box stable
+opkg install sing-box-awg-beta    # sing-box beta
+opkg install smtp-tunnel-client   # SOCKS5 proxy через SMTP
 ```
 
 ## Available Packages
@@ -47,5 +48,6 @@ opkg install sing-box-awg-beta # sing-box beta
 | **awg-manager** | 1.2.1 | AmneziaWG tunnel manager with web interface |
 | **sing-box-awg** | 1.12.17-awg2.0 | sing-box proxy platform with AmneziaWG 2.0 support (stable) |
 | **sing-box-awg-beta** | 1.13.0-beta.7-awg2.0 | sing-box proxy platform with AmneziaWG 2.0 support (beta) |
+| **smtp-tunnel-client** | 1.0.0 | SOCKS5 proxy over SMTP protocol for DPI bypass |
 
 ## Use only if understand what are you doing
