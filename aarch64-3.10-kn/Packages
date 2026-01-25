@@ -34,3 +34,14 @@ Description: sing-box proxy platform with AmneziaWG 2.0 support
 HomePage: https://github.com/hoaxisr/amnezia-box
 
 
+Package: smtp-tunnel-client
+Version: 1.0.0
+Section: net
+Architecture: aarch64-3.10
+Maintainer: hoaxisr
+MD5Sum: 86ceea96667d1ee9d4c0e15ab73ad1fd
+Size: 2613159
+Filename: smtp-tunnel-client_1.0.0_aarch64-3.10-kn.ipk
+Description: SMTP Tunnel Client - SOCKS5 proxy over SMTP
+
+
