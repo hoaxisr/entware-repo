@@ -1,12 +1,12 @@
 Package: awg-manager
-Version: 1.2.1
+Version: 1.2.2
 Depends: curl
 Section: net
 Architecture: aarch64-3.10
 Maintainer: hoaxisr
-MD5Sum: d002b433a26749f7600d1a12a4c998b7
-Size: 4136895
-Filename: awg-manager_1.2.1_aarch64-3.10-kn.ipk
+MD5Sum: e3fa17bae26edfb9271b84abee3f5b5a
+Size: 4136864
+Filename: awg-manager_1.2.2_aarch64-3.10-kn.ipk
 Description: AmneziaWG tunnel manager with web interface
 
 
