@@ -4,8 +4,8 @@ Depends: curl
 Section: net
 Architecture: aarch64-3.10
 Maintainer: hoaxisr
-MD5Sum: 47812e9e0fd23703107841c9b5444dbd
-Size: 4154256
+MD5Sum: 961ff1ce849a05a01ace7387e8163f74
+Size: 4153866
 Filename: awg-manager_1.3.12_aarch64-3.10-kn.ipk
 Description: AmneziaWG tunnel manager with web interface
 
